@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ruang Rasa - Representasi Masakan Indonesia</title>
+    <link rel="stylesheet" href="output.css" />
+    <style>
+      /* Custom font kalau mau lebih estetik */
+      @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap");
+      body {
+        font-family: "Plus Jakarta Sans", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900 overflow-x-hidden">
+    <nav class="bg-[#829460] fixed top-0 left-0 w-full z-999 shadow-md">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="flex justify-between items-center h-20">
+          <div class="cursor-pointer shrink-0 relative z-1000">
+            <p class="text-2xl font-extrabold text-white">
+              Ruang<span class="text-[#D4AD45]">Rasa</span>
+            </p>
+          </div>
+
+          <label
+            for="menu-toggle"
+            class="lg:hidden cursor-pointer p-2 relative z-1000"
+          >
+            <svg
+              class="w-7 h-7 text-[#F3EFE0]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </label>
+          <input type="checkbox" id="menu-toggle" class="hidden peer" />
+
+          <div
+            class="hidden peer-checked:flex lg:flex flex-col lg:flex-row absolute lg:relative top-0 left-0 w-full lg:w-auto h-screen lg:h-auto bg-[#829460] lg:bg-transparent items-center justify-center lg:justify-start gap-8 transition-all duration-300"
+          >
+            <a href="#" class="text-[#F3EFE0] font-medium hover:text-white"
+              >Beranda</a
+            >
+            <a href="#about" class="text-[#F3EFE0] font-medium hover:text-white"
+              >Profil</a
+            >
+            <a href="#menu" class="text-[#F3EFE0] font-medium hover:text-white"
+              >Menu</a
+            >
+            <a
+              href="#testimoni"
+              class="text-[#F3EFE0] font-medium hover:text-white"
+              >Testimoni</a
+            >
+            <a
+              href="#kontak"
+              class="text-[#F3EFE0] font-medium hover:text-white"
+              >Kontak</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mt-20">
+      <section
+        class="relative w-full min-h-screen bg-[linear-gradient(to_right,rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=2070')] bg-cover bg-fixed bg-center flex flex-col justify-center items-center text-center px-4"
+      >
+        <span
+          class="text-white tracking-[0.3em] uppercase text-xs md:text-sm mb-4 font-semibold opacity-90"
+          >CV. Ruang Rasa Indonesia</span
+        >
+        <h1
+          class="text-[#F3EFE0] text-5xl md:text-8xl font-bold tracking-tighter mb-6 leading-none"
+        >
+          Ruang<span class="text-[#D4AD45]">Rasa</span>
+        </h1>
+        <p
+          class="text-[#F3EFE0] text-base md:text-2xl max-w-2xl font-light italic leading-relaxed mb-10"
+        >
+          "Representasi Masakan Indonesia dengan segala keistimewaannya."
+        </p>
+        <button
+          class="bg-[#D4AD45] text-white px-10 py-4 rounded-md font-bold hover:bg-[#93782f] transition-all active:scale-95 shadow-lg"
+        >
+          RESERVASI EVENT
+        </button>
+      </section>
+
+      <section id="about" class="bg-[#F3EFE0] py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2 flex justify-center">
+              <img
+                src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=1887"
+                alt="Tentang Kami"
+                class="w-full max-w-md rounded-2xl shadow-2xl object-cover aspect-4/5"
+              />
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+              <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-2">
+                Tentang Kami
+              </h2>
+              <p class="text-xl text-[#D4AD45] font-medium mb-4">
+                CV. Ruang Rasa Indonesia
+              </p>
+              <p class="text-gray-600 leading-relaxed mb-8 text-justify">
+                CV. Ruang Rasa Indonesia atau biasa disebut Ruang Rasa merupakan
+                perusahaan di bidang kuliner yang didirikan sejak tahun 2024
+                mengelola restoran dan tempat event dengan Kantor Pusat di Jl.
+                Jend. Sudirman, Purwokerto.
+              </p>
+              <button
+                class="bg-[#D4AD45] px-6 py-3 rounded-xl text-white font-bold hover:bg-[#927936] transition-all shadow-md mb-10"
+              >
+                Kunjungi Profil
+              </button>
+
+              <div class="flex items-center gap-4 mt-4">
+                <p class="font-bold text-[#BC6153] whitespace-nowrap">
+                  Paket Menu Populer
+                </p>
+                <div class="h-px w-full bg-[#BC6153]/30"></div>
+              </div>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+                <div
+                  class="flex items-center bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition cursor-default"
+                >
+                  <div
+                    class="w-10 h-10 bg-[#829460] rounded-full flex items-center justify-center text-white font-bold italic"
+                  >
+                    S
+                  </div>
+                  <p class="ml-4 font-semibold text-gray-700">Sultan Jawa</p>
+                </div>
+                <div
+                  class="flex items-center bg-white p-4 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition cursor-default"
+                >
+                  <div
+                    class="w-10 h-10 bg-[#BC6153] rounded-full flex items-center justify-center text-white font-bold italic"
+                  >
+                    P
+                  </div>
+                  <p class="ml-4 font-semibold text-gray-700">Pedas Dewata</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="relative py-24 bg-[linear-gradient(to_right,rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=2070')] bg-cover bg-fixed bg-center"
+      >
+        <div class="max-w-4xl mx-auto px-6 text-center text-white space-y-8">
+          <h2 class="text-4xl md:text-6xl font-bold tracking-tight">
+            Selamat Datang
+          </h2>
+          <div
+            class="space-y-6 text-lg md:text-xl font-light leading-relaxed opacity-90"
+          >
+            <p>
+              Ruang Rasa menyajikan Masakan Indonesia, representasi Masakan
+              Indonesia dengan segala keistimewaannya, disajikan secara
+              higienis, otentik dengan kaya cita rasa rempah-rempah serta halal.
+            </p>
+            <p>
+              Menjadi pilihan keluarga / perusahaan / komunitas karena harga
+              terbaik, fasilitas lengkap dan dekorasi nyaman seperti rumah
+              sendiri.
+            </p>
+          </div>
+          <div class="pt-12">
+            <p class="italic text-gray-300 mb-2">Salam,</p>
+            <h2
+              class="text-3xl md:text-5xl font-extrabold text-[#D4AD45] tracking-tighter"
+            >
+              CV Ruang Rasa Indonesia
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="bg-[#F3EFE0] py-20">
+        <div class="max-w-7xl mx-auto px-6">
+          <h2
+            class="text-3xl md:text-4xl font-black text-center mb-16 uppercase tracking-[0.2em] text-gray-800"
+          >
+            PAKET WARISAN <span class="text-[#D4AD45]">RASA</span>
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div
+              class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group"
+            >
+              <div class="relative mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069"
+                  alt="Sultan Jawa"
+                  class="w-32 h-32 mx-auto object-cover rounded-full ring-8 ring-gray-50 group-hover:ring-[#D4AD45]/20 transition-all duration-500"
+                />
+              </div>
+              <div class="text-center">
+                <h3 class="font-bold text-xl text-gray-800 mb-2">
+                  Paket Sultan Jawa
+                </h3>
+                <p class="text-[#D4AD45] font-extrabold text-2xl mb-6">
+                  Rp 150.000
+                </p>
+                <ul class="text-gray-500 text-sm space-y-3 border-t pt-6">
+                  <li class="hover:text-[#829460] transition-colors">
+                    Nasi Liwet
+                  </li>
+                  <li class="hover:text-[#829460] transition-colors">
+                    Ayam Ingkung
+                  </li>
+                  <li class="hover:text-[#829460] transition-colors">
+                    Sambal Goreng Ati
+                  </li>
+                  <li class="hover:text-[#829460] transition-colors">
+                    Gudeg & Krecek
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group"
+            >
+              <div class="relative mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1562967914-608f82629710?q=80&w=2073"
+                  alt="Pedas Dewata"
+                  class="w-32 h-32 mx-auto object-cover rounded-full ring-8 ring-gray-50 group-hover:ring-[#D4AD45]/20 transition-all duration-500"
+                />
+              </div>
+              <div class="text-center">
+                <h3 class="font-bold text-xl text-gray-800 mb-2 text-balance">
+                  Pedas Nagih Dewata
+                </h3>
+                <p class="text-[#D4AD45] font-extrabold text-2xl mb-6">
+                  Rp 135.000
+                </p>
+                <ul class="text-gray-500 text-sm space-y-3 border-t pt-6">
+                  <li>Nasi Sela</li>
+                  <li>Ayam Betutu</li>
+                  <li>Sate Lilit Bali</li>
+                  <li>Sambal Matah</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group"
+            >
+              <div class="relative mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?q=80&w=2070"
+                  alt="Barat Membara"
+                  class="w-32 h-32 mx-auto object-cover rounded-full ring-8 ring-gray-50 group-hover:ring-[#D4AD45]/20 transition-all duration-500"
+                />
+              </div>
+              <div class="text-center">
+                <h3 class="font-bold text-xl text-gray-800 mb-2">
+                  Barat Membara
+                </h3>
+                <p class="text-[#D4AD45] font-extrabold text-2xl mb-6">
+                  Rp 135.000
+                </p>
+                <ul class="text-gray-500 text-sm space-y-3 border-t pt-6">
+                  <li>Nasi Kapau</li>
+                  <li>Rendang Daging</li>
+                  <li>Ayam Pop</li>
+                  <li>Sambal Ijo</li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="bg-white rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 group"
+            >
+              <div class="relative mb-6">
+                <img
+                  src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?q=80&w=1933"
+                  alt="Sundanese Pride"
+                  class="w-32 h-32 mx-auto object-cover rounded-full ring-8 ring-gray-50 group-hover:ring-[#D4AD45]/20 transition-all duration-500"
+                />
+              </div>
+              <div class="text-center">
+                <h3 class="font-bold text-xl text-gray-800 mb-2">
+                  Sundanese Pride
+                </h3>
+                <p class="text-[#D4AD45] font-extrabold text-2xl mb-6">
+                  Rp 120.000
+                </p>
+                <ul class="text-gray-500 text-sm space-y-3 border-t pt-6">
+                  <li>Nasi Timbel</li>
+                  <li>Ayam Bakar Madu</li>
+                  <li>Lalapan Segar</li>
+                  <li>Sambal Dadak</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimoni" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="mb-12">
+            <h2
+              class="text-center text-3xl md:text-4xl font-extrabold text-gray-800 tracking-tight"
+            >
+              Favorit <span class="text-[#829460]">Keluarga</span> &
+              <span class="text-[#D4AD45]">Perusahaan</span>
+            </h2>
+            <div class="w-24 h-1 bg-[#D4AD45] mx-auto mt-4 rounded-full"></div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div
+              class="flex flex-col bg-[#F3EFE0] rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 hover:-translate-y-2"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 overflow-hidden rounded-full ring-4 ring-white shadow-md shrink-0"
+                >
+                  <img
+                    src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?q=80&w=1473"
+                    alt="PT Maju Jaya"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div class="ml-5">
+                  <p class="font-bold text-gray-800 text-lg leading-tight">
+                    PT. Maju Jaya Bersama
+                  </p>
+                  <p class="text-sm text-[#829460] italic">
+                    Divisi General Affairs
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-gray-600 text-justify leading-relaxed italic flex-grow"
+              >
+                "Kami mempercayakan acara Annual Corporate Gathering kami kepada
+                Ruang Rasa Indonesia, dan hasilnya luar biasa. Koordinasi tim
+                sangat rapi. Menu
+                <span class="text-[#D4AD45] font-semibold"
+                  >Paket Sultan Jawa</span
+                >-nya sangat elegan."
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col bg-[#F3EFE0] rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 hover:-translate-y-2"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 overflow-hidden rounded-full ring-4 ring-white shadow-md shrink-0"
+                >
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1677666510169-379d4e8bc0d5?q=80&w=1471"
+                    alt="Ibu Ratna"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div class="ml-5">
+                  <p class="font-bold text-gray-800 text-lg leading-tight">
+                    Ibu Ratna Sari
+                  </p>
+                  <p class="text-sm text-[#829460] italic">Ibu Rumah Tangga</p>
+                </div>
+              </div>
+              <p
+                class="text-gray-600 text-justify leading-relaxed italic flex-grow"
+              >
+                "Ruang Rasa sudah jadi tempat langganan keluarga kami. Anak-anak
+                suka ayam bakarnya, dan orang tua saya cocok sama sayur
+                lodehnya. Fasilitas lengkap, bersih, dan pelayanannya sangat
+                ramah."
+              </p>
+            </div>
+
+            <div
+              class="flex flex-col bg-[#F3EFE0] rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-black/5 hover:-translate-y-2"
+            >
+              <div class="flex items-center mb-6">
+                <div
+                  class="w-16 h-16 overflow-hidden rounded-full ring-4 ring-white shadow-md shrink-0"
+                >
+                  <img
+                    src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=500"
+                    alt="Aditya"
+                    class="w-full h-full object-cover object-center"
+                  />
+                </div>
+                <div class="ml-5">
+                  <p class="font-bold text-gray-800 text-lg leading-tight">
+                    Aditya Pratama
+                  </p>
+                  <p class="text-sm text-[#829460] italic text-balance">
+                    Content Creator & Foodie
+                  </p>
+                </div>
+              </div>
+              <p
+                class="text-gray-600 text-justify leading-relaxed italic flex-grow"
+              >
+                "Sebagai pecinta kuliner, saya nemu rasa yang 'berani' di sini.
+                <span class="text-[#D4AD45] font-semibold"
+                  >Paket Pedas Dewata</span
+                >-nya juara banget, sambal matahnya fresh parah. Balik lagi sih
+                fiks!"
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="kontak" class="bg-[#F3EFE0] py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6">
+          <div
+            class="bg-white rounded-3xl overflow-hidden shadow-xl flex flex-col lg:flex-row"
+          >
+            <div
+              class="w-full lg:w-1/2 p-8 md:p-16 flex flex-col justify-center"
+            >
+              <h2 class="font-bold text-4xl text-gray-800 mb-8 relative">
+                Detail Kontak
+                <span
+                  class="absolute -bottom-2 left-0 w-20 h-1 bg-[#D4AD45]"
+                ></span>
+              </h2>
+
+              <div class="space-y-4 text-gray-600 mb-10">
+                <p class="flex items-center">
+                  <span class="w-24 font-bold">No. Telp</span> : 0812 3456 7890
+                </p>
+                <p class="flex items-center">
+                  <span class="w-24 font-bold">Email</span> :
+                  service@ruangrasa.com
+                </p>
+                <p class="flex items-center">
+                  <span class="w-24 font-bold">Alamat</span> : Jln. Jend.
+                  Sudirman
+                </p>
+                <p class="flex items-center">
+                  <span class="w-24 font-bold">Website</span> :
+                  www.ruangrasa.com
+                </p>
+              </div>
+
+              <div
+                class="bg-[#F3EFE0]/50 p-6 rounded-2xl border-l-4 border-[#829460]"
+              >
+                <h2 class="font-bold text-xl pb-4 text-[#829460]">Jam Buka</h2>
+                <div class="space-y-2 text-sm md:text-base">
+                  <p class="flex justify-between">
+                    <span>Senin - Kamis</span>
+                    <span class="font-semibold text-gray-700"
+                      >08.00 - 22.00 WIB</span
+                    >
+                  </p>
+                  <p class="flex justify-between">
+                    <span>Jumat - Sabtu</span>
+                    <span class="font-semibold text-gray-700"
+                      >12.00 - 22.00 WIB</span
+                    >
+                  </p>
+                  <p class="flex justify-between text-red-500">
+                    <span>Minggu</span> <span class="font-bold">Tutup</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="w-full lg:w-1/2 h-100 lg:h-auto min-h-100">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.26993132717!2d109.2323!3d-7.4244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMjUnMjcuOCJTIDEwOcKwMTMnNTYuMyJF!5e0!3m2!1sid!2sid!4v1700000000000"
+                class="w-full h-full border-0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#829460] py-10 text-center text-[#F3EFE0]">
+      <p class="font-semibold">
+        &copy; 2026 CV. Ruang Rasa Indonesia. All Rights Reserved.
+      </p>
+      <p class="text-sm mt-2 opacity-70">
+        Jl. Jend. Sudirman, Purwokerto, Jawa Tengah.
+      </p>
+    </footer>
+  </body>
+</html>
